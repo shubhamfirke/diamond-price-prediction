@@ -11,16 +11,15 @@ def get_requirements(file_path:str)->List[str]:
 
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
-        return requirements
 
+    return requirements
 
 
 setup(
-    name='DiamondPriceprediction',
+    name='RegressorProject',
     version='0.0.1',
-    author='Shubham Firke',
-    author_email="shubhamfirke17@gmail.com",
+    author='shubhamfirke',
+    author_email='shubhamfirke17@gmail.com',
     install_requires=get_requirements('requirements.txt'),
     packages=find_packages()
-
 )
